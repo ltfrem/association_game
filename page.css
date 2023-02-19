@@ -1,0 +1,10 @@
+html {
+  background-color: #ecefed;
+}
+body {
+  font-family: "Helvetica";
+}
+#tries {
+  color: #9e4b3a;
+  list-style-type: none;
+}
