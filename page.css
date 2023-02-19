@@ -8,3 +8,6 @@ body {
   color: #9e4b3a;
   list-style-type: none;
 }
+button {
+  margin: 5px;
+}

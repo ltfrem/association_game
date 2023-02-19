@@ -355,3 +355,11 @@ button.addEventListener("click", function () {
 reset.addEventListener("click", function () {
   location.reload();
 });
+
+let answer = document.getElementById("answer");
+let show_answer = document.getElementById("show_answer");
+answer.addEventListener("click", function () {
+  show_answer.textContent = getKeyByValue(content, selection);
+  show_answer.style.backgroundColor = "#2df23f";
+  reset.style.display = "block";
+});
