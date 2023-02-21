@@ -230,7 +230,7 @@ const content = {
   ball: ["base", "snow", "dance"],
   go: ["stop", "kart", "slow"],
   cover: ["up", "book", "charge"],
-  type: ["tin", "writer", "my"],
+  //type: ["tin", "writer", "my"],
   chair: ["leg", "arm", "person"],
   lead: ["weight", "out", "pencil"],
   top: ["spin", "tip", "shape"],

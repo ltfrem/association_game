@@ -11,3 +11,6 @@ body {
 button {
   margin: 5px;
 }
+#directions {
+  text-decoration: underline;
+}
