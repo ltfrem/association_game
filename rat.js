@@ -341,13 +341,13 @@ let reset = document.getElementById("reset");
 reset.style.display = "none"; //do not display as default
 
 button.addEventListener("click", function () {
-  if (usr_input.value == getKeyByValue(content, selection)) {
+  if (usr_input.value.toLowerCase() == getKeyByValue(content, selection)) {
     main_div.style.backgroundColor = "#A5CBB2";
     reset.style.display = "block";
   } else {
     let tries = document.getElementById("tries");
     let li = document.createElement("li");
-    tries.appendChild(document.createTextNode(usr_input.value));
+    tries.appendChild(document.createTextNode(usr_input.value.toLowerCase()));
     tries.appendChild(li);
   }
 });

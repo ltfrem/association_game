@@ -3,6 +3,7 @@ html {
 }
 body {
   font-family: "Helvetica";
+  font-size: 24px;
 }
 #tries {
   color: #9e4b3a;
@@ -13,4 +14,7 @@ button {
 }
 #directions {
   text-decoration: underline;
+}
+#reset {
+  text-align: center;
 }
