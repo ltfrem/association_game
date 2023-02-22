@@ -3,15 +3,19 @@
 <head>
   <title>Remote Association Game</title>
   <link rel="stylesheet" href="page.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Labrada:wght@400;600&family=Rubik:wght@400;500;600;700&family=Source+Serif+4:wght@200;400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <div id="main-body">
-    <p id="directions">Each combination of 3 words are linked by a fourth word. See if you can guess it.</p>
+  <div id="container">
+    <p id="directions">Each combination of 3 words<br>are linked by a fourth word.</p>
     <p id="words">
 
     </p>
-    <p id="show_answer"></p>
-    <input id="usr_input" placeholder="" size="12" type="input">
+    <p id="show_answer">...</p>
+    <input id="usr_input" placeholder="" size="12" type="input"/> 
     <br>
     <button id="submit" type="submit">Submit</button>
     <br>
@@ -20,8 +24,6 @@
     <button id="reset" type="button">Reset</button>
     <ul id="tries">
     </ul>
-  
-  </input>
 </div>
 <script src="rat.js"></script>
 </body>

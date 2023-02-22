@@ -1,9 +1,17 @@
-html {
+html,
+#show_answer {
   background-color: #ecefed;
+  color: #ecefed;
 }
 body {
-  font-family: "Helvetica";
-  font-size: 24px;
+  color: black;
+  font-family: "Labrada";
+  font-size: 48px;
+  border-color: 2px blue;
+}
+#container {
+  text-align: center;
+  vertical-align: middle;
 }
 #tries {
   color: #9e4b3a;
@@ -11,10 +19,19 @@ body {
 }
 button {
   margin: 5px;
+  font-family: "Labrada";
+  font-size: 32px;
+  font-weight: 700;
+  background-color: #ecefed;
+  color: darkolivegreen;
+  border: 0px;
+  display: inline-block;
 }
 #directions {
-  text-decoration: underline;
+  font-weight: 700;
 }
-#reset {
-  text-align: center;
+
+#usr_input {
+  font-family: "Labrada";
+  font-size: 32px;
 }

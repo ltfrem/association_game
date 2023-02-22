@@ -315,6 +315,8 @@ const content = {
   stop: ["red", "go", "car"],
 };
 
+let used = [];
+
 const keys = Object.keys(content);
 const values = Object.values(content);
 
@@ -329,7 +331,7 @@ function generate_new() {
 let main_div = document.getElementById("words");
 let selection = generate_new();
 main_div.textContent = selection.toString().replaceAll(",", "\n");
-console.log(selection);
+//console.log(selection);
 
 function getKeyByValue(object, value) {
   return Object.keys(object).find((key) => object[key] === value);
@@ -342,8 +344,11 @@ reset.style.display = "none"; //do not display as default
 
 button.addEventListener("click", function () {
   if (usr_input.value.toLowerCase() == getKeyByValue(content, selection)) {
-    main_div.style.backgroundColor = "#A5CBB2";
-    reset.style.display = "block";
+    // main_div.style.backgroundColor = "#A5CBB2";
+    show_answer.textContent = getKeyByValue(content, selection) + "!";
+    show_answer.style.fontWeight = "700";
+    show_answer.style.color = "black";
+    reset.style.display = "inline-block";
   } else {
     let tries = document.getElementById("tries");
     let li = document.createElement("li");
@@ -360,6 +365,7 @@ let answer = document.getElementById("answer");
 let show_answer = document.getElementById("show_answer");
 answer.addEventListener("click", function () {
   show_answer.textContent = getKeyByValue(content, selection);
-  show_answer.style.backgroundColor = "#2df23f";
-  reset.style.display = "block";
+  show_answer.style.fontWeight = "700";
+  show_answer.style.color = "black";
+  reset.style.display = "inline-block";
 });
